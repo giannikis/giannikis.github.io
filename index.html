@@ -1,69 +1,82 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Georgios Giannikis</title>
+
+    <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500" rel="stylesheet">
+
     <style>
-hr.dotted{
-    border: 0px;
-    border-bottom: 1px dotted #000000;
-    color: #FFF;
-    background-color: #FFF;
+body 
+{
+  font-family: 'Open Sans', sans-serif !important;
+  background-image: url('bg.jpg');
+  margin: 0px;
+  width: 100%;
+  height: 100%;
 }
 
-body {
-    background-image: url('bg.jpg');
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-div#content {
+div#content 
+{
   margin-left:auto;
   margin-right:auto;
-  width: 700px;
+  width: 800px;
   background: white;
   padding: 20px;
 }
 
-table#headerTable {
-  padding-bottom:10px;
-    width: 100%;
-}
-table#headerTable td#nameCell {
-    padding-left:20px;
-    vertical-align: top;
-}
-td#addressCell {
-    vertical-align: top;   
+#content div
+{
 }
 
-table#headerTable td#addressCell>div.addressBox {
-        padding-left: 20px;
-        padding-bottom: 10px;
+#headerDiv
+{
+  width: 100%;
+  height: 265px;
 }
-table#headerTable td#addressCell .addressBox>h3 {
-        display:block;
-        margin-left: -10px;
-        margin-bottom: 0px;
+
+#profileDiv
+{
+  width: 200px;
+  height: 265px;
+  float: left;
 }
-table#headerTable td#addressCell td#contactBox {
-        padding: 10px;
-        padding-bottom: 10px;
+#profileDiv > img
+{
+  width: 200px;
 }
-div#researchBox h1 {
-  margin-top: 0px;
+
+#nameDiv
+{
+  float: left;
+  width: 330px;
+  height: 265px;
+  margin-left: 10px;
+  vertical-align: middle;
+  padding-top: 3em;
+}
+
+#addressDiv
+{
+  float: left;
+  height: 265px;
+  width: 210px;
+}
+#addressDiv h4
+{
+  padding: 0px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
-div.listbox h2 {
-  margin-top: 0px;
-  margin-bottom: 5px;
-}
-div.listbox ul {
-  margin:0px;
-}
-div.listbox ul li {
-  padding-top: 2px;
-  padding-bottom: 5px;	
+
+a.publication-title
+{
+  font-weight: bold;
 }
 
     </style>
@@ -72,103 +85,127 @@ div.listbox ul li {
   <body>
 
     <div id="content">
-      <table id="headerTable" cellpadding="0" cellspacing="0">
-        <tr>
-            <td id="avatarCell">
-                <img src="profile.jpg" width="200px"/>
-            </td>
-            <td id="nameCell">
-                <h1 class="nameCell">Georgios Giannikis</h1>
-                <h3>Dipl. Ing., Msc., PhD&nbsp;Student</h3>
-            </td>
-            <td id="addressCell">
-                <div id="addressBox">
-                    <h3>Address:</h3>
-                    Inst. for Pervasive Computing<br/>
-                    ETH (CAB F 74.1)<br/>
-                    Universitätstrasse 6<br/>
-                    CH-8092 Zürich<br/>
-                    Switzerland
-                </div>
-            <hr class="dotted"/>
-                <div id="contactBox">
-                    Phone: +41 44 632 2528<br/>
-                    Office: CAB F 74.1 <br/>
-                    Homepage: <a href="http://www.systems.ethz.ch/people/giannikisg">http://www.giannikis.com</a><br/>
-                    e-Mail: <a href="mailto:fakeaddress@fake.ch" style="display:none">fakeaddress@fake.ch</a><a id="emailLink" href="&#0109;ailto&#0058;giannikg&#0064;inf.ethz.ch">giannikg&#0064;inf.ethz.ch</a><br/>
-                </div>
-            </td>
-        </tr>
-      </table>
+    
+      <div id="headerDiv">
+        
+        <div id="profileDiv">
+          <img src="profile.jpg"/>
+        </div>
+        
+        <div id="nameDiv">
+          <h2 class="nameCell"><b>Georgios Giannikis</b></h2>
+          <h3>
+            Dr. Sc. ETH Zurich<br/>
+            Msc. ETH Zurich<br/>
+            Dipl. Ing. ECE Patras
+          </h3>
+        </div>
+        
+        <div id="addressDiv">
+          <div id="addressBox">
+            <h4>Address</h4>
+            Hagenholzstrasse 62<br/>
+            CH-8050 Zurich<br/>
+            Switzerland
+          </div>
+          <hr class="dotted"/>
+          <div id="contactBox">
+            <h4>Contact</h4>
+            <span class="glyphicon glyphicon-phone"></span> +41 78 89 2667 <br/>
+            <span class="glyphicon glyphicon-envelope"></span> <a href="mailto:fakeaddress@fake.ch" style="display:none">fakeaddress@fake.ch</a><a id="emailLink" href="&#0109;ailto&#0058;giannikis.georgios&#0064;gmail.com">giannikis.georgios&#0064;gmail.com</a><br/>
+          </div>
+          <hr class="dotted"/>
+          <span class="glyphicon glyphicon-file"></span> <a href="cv/">Curriculum Vitae</a>
+        </div>
+      </div> <!-- headerDiv -->
+     
       <hr class="dotted"/>
-      <div id="researchBox">
-        <h1>Research</h1>
-        I joined the Systems Group of the department of Computer Science at ETH Zurich in May 2009, as a PhD student. 
-        My interests lie in the area of medium and large scale distributed systems and data management systems.
-        I am particularly interested in self-managed medium scale distributed database systems.
+      
+      <div id="workexperienceBox">
+        <h2>Work Experience</h2>
+        I am a principal member of technical staff in Oracle Labs since 2014, working on project RAPID. 
+        Project RAPID involves the design and implementation of both software and hardware components in order to improve the performance and energy efficiency of database processing systems. 
+        The goal of the project is better performance and lower energy consumption by at least one order of magnitude over today's solutions. 
+        As part of RAPID, I worked on the software side, designing and implementing high performance algorithms for efficient data processing.
+        <br/>
+        <br/>
+        I received my PhD from ETH Zurich in June 2014. 
+        During my PhD studies, I was part of the <a href="www.systems.ethz.ch">Systems Group</a> working under the supervision of <a href="https://people.inf.ethz.ch/alonso/">Prof. Gustavo Alonso</a> and <a href="https://www.systems.ethz.ch/people/donald-kossmann">Prof. Donald Kossmann</a>.
+        The main topic of my PhD was work sharing data processing systems. 
+        During my PhD I developed from scratch a fully blown database system, <a href="https://www.ecc.ethz.ch/research/shareddb">SharedDB</a>.
+        This includes a data storage layer, a query processing engine including all SQL defined operators, a transactional layer with ACID guarantees and a global query optimizer.
+        The overall system has a 2x to 5x better performance compared to popular, commercial database systems, while running the full set of well known benchmarks (i.e. TPC-H, TPC-W, TPC-C).
         <br/>
         <br/>
         Prior to becoming a PhD student, I received my Msc on Computer Science from ETH Zurich in 2009. 
         My master thesis was part of the implementation of a distributed main-memory data management system.
         In 2006 I received my Diploma on Electrical and Computer Engineering from University of Patras, Greece.
-        <br/>
       </div>
+    
       <hr class="dotted" />
+      
       <div id="publicationsBox" class="listBox">
         <h2>Publications</h2>
 
         <ul class="publications">
-
           <li>
-            Shared Workload Optimization [To appear in 2014]
-          <br/>
+            <a class="publication-title" href="http://dl.acm.org/citation.cfm?id=2904124">MQJoin: Efficient Shared Execution of Main-Memory Joins</a><br/>
+            Darko Makreshanski, Georgios Giannikis, Gustavo Alonso, Donald Kossmann. <br/>
+            VLDB 2016, New Delhi, India. <br/>
+            <i>PVLDB 9(6):480-491, 2016</i>
+          </li>
+          <li>
+            <a class="publication-title" href="http://dl.acm.org/citation.cfm?id=2732280">Shared Workload Optimization</a><br/>
             Georgios Giannikis, Darko Makreshanski, Gustavo Alonso, Donald Kossmann. <br/>
+            VLDB 2014, Hangzhou, China. <br/>
+            <i>PVLDB 7(6):429-440, 2014</i>
           </li>
 
           <li>
-            <a href="http://dl.acm.org/citation.cfm?id=2463676.2463678&coll=DL&dl=GUIDE&CFID=119861160&CFTOKEN=46684660">Workload optimization using SharedDB [Demo Paper]</a>
-          <br/>
+            <a class="publication-title" href="http://e-collection.library.ethz.ch/view/eth:46879">Work Sharing Data Processing Systems</a><br/>
+            Georgios Gianniks. <br/>
+            PhD Thesis, June 2014.
+          </li>
+
+          <li>
+            <a class="publication-title" href="http://dl.acm.org/citation.cfm?id=2463676.2463678">Workload optimization using SharedDB [Demo Paper]</a><br/>
             Georgios Giannikis, Darko Makreshanski, Gustavo Alonso, Donald Kossmann. <br/>
+            SIGMOD 2013, New York, USA. <br/>
             <i>2013 ACM SIGMOD Conference</i><br/>
-            New York, USA, 2013.
           </li>
 
-        <!--
           <li>
-            <a href="">Why Execute One Query, when you can Execute Thousands [Demo / Poster Paper]</a>
-          <br/>
+            <a class="publication-title" href="#">Why Execute One Query, when you can Execute Thousands [Demo / Poster]</a><br/>
             Georgios Giannikis, Darko Makreshanski, Gustavo Alonso, Donald Kossmann. <br/>
-            <i>2013 ACM SIGOPS/EuroSys Conference</i><br/>
-            Prague, Czech Republic, 2013.
+            EuroSYS 2013, Prague, Czech Republic. <br/>
+            <i>2013 ACM SIGOPS/EuroSys Conference</i>
           </li>
-        -->
 
           <li>
-            <a href="http://vldb.org/pvldb/vol5/p526_georgiosgiannikis_vldb2012.pdf">SharedDB: Killing One Thousand Queries With One Stone.</a> 
-    <!-- [<a href="SharedDB.pdf">Slides</a>]--> <br/>
+            <a class="publication-title" href="http://vldb.org/pvldb/vol5/p526_georgiosgiannikis_vldb2012.pdf">SharedDB: Killing One Thousand Queries With One Stone.</a> <br/>
             Georgios Giannikis, Gustavo Alonso, Donald Kossmann. <br/>
-            PVLDB 5(6):526-537, 2012.
+            VLDB 2012, Istanbul, Turkey.<br/>
+            <i>PVLDB 5(6):526-537, 2012.</i>
           </li>
 
           <li>
-            <a href="http://systems.ethz.pubzone.org/pages/publications/showPublication.do?publicationId=1396317">Crescando [Demo Paper]</a><br/>
+            <a class="publication-title" href="http://systems.ethz.pubzone.org/pages/publications/showPublication.do?publicationId=1396317">Crescando [Demo Paper]</a><br/>
             Georgios Giannikis, Philipp Unterbrunner, Jeremy Meyer, Gustavo Alonso, Dietmar Fauser, Donald Kossman.<br/>
-            <i>2010 ACM SIGMOD/PODS Conference</i><br/>
-            Indianapolis, USA, 2010.
+            Indianapolis, USA, 2010.<br/>
+            <i>2010 ACM SIGMOD/PODS Conference</i>
           </li>
 
           <li>
-            <a href="http://e-collection.ethbib.ethz.ch/view/eth:41832">Daedalus, a distributed crescando system</a></br>
-            Georgios Giannikis<br>
-            <a href="http://www.systems.ethz.ch">Systems Group</a><br/>
-            ETH Zürich, Switzerland, Apr 2009
+            <a class="publication-title" href="http://e-collection.ethbib.ethz.ch/view/eth:41832">Daedalus, a distributed Crescando system</a></br>
+            Georgios Giannikis<br />
+            Master Thesis, April 2009.
           </li>
 
           <li>
-            <a href="http://www.vldb.org/pvldb/2/vldb09-323.pdf">Predictable Performance for Unpredictable Workloads</a>&nbsp;[<a href="http://vldb2009.org/files/Slides/3395-crescando.pdf">Slides</a>]<br/>
+            <a class="publication-title" href="http://dl.acm.org/citation.cfm?id=1687707">Predictable Performance for Unpredictable Workloads</a> [<a href="http://vldb2009.org/files/Slides/3395-crescando.pdf">Slides</a>]<br/>
             Philipp Unterbrunner, Georgios Giannikis, Gustavo Alonso, Dietmar Fauser, Donald Kossmann.<br/>
-            <i>35th International Conference on Very Large Data Bases (VLDB 2009)</I><br/>
-            Lyon, France, Aug 2009
+            VLDB 2009, Lyon, France. <br/>
+            <i>PVLDB 2(1):706-717, 2009</i>
           </li>
 
         </ul>
@@ -192,8 +229,8 @@ div.listbox ul li {
       </div>
       <hr class="dotted"/>
       <div id="teachingBox" class="listBox">
-        <h2>Teaching</h2>
-
+        <h2>Teaching Experience</h2>
+        <span>During my PhD studies, I was a teaching assistant in the following Computer Science courses:</span>
         <ul class="teaching">
           <li>
             <a href="http://ait.inf.ethz.ch/teaching/courses/2014-SS-Parallel-Programming">Parallel Programming, Spring 2014</a>
@@ -212,16 +249,25 @@ div.listbox ul li {
       <hr class="dotted"/>
     </div>
 
-  <script type="text/javascript">
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+     
+    </div>
 
-    ga('create', 'UA-87719594-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+
+
+    <script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-87719594-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 
   </body>
+  
+
 </html>
 
