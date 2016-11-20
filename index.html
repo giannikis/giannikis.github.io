@@ -1,1 +1,227 @@
-Hello World
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>Georgios Giannikis</title>
+    <style>
+hr.dotted{
+    border: 0px;
+    border-bottom: 1px dotted #000000;
+    color: #FFF;
+    background-color: #FFF;
+}
+
+body {
+    background-image: url('bg.jpg');
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+div#content {
+  margin-left:auto;
+  margin-right:auto;
+  width: 700px;
+  background: white;
+  padding: 20px;
+}
+
+table#headerTable {
+  padding-bottom:10px;
+    width: 100%;
+}
+table#headerTable td#nameCell {
+    padding-left:20px;
+    vertical-align: top;
+}
+td#addressCell {
+    vertical-align: top;   
+}
+
+table#headerTable td#addressCell>div.addressBox {
+        padding-left: 20px;
+        padding-bottom: 10px;
+}
+table#headerTable td#addressCell .addressBox>h3 {
+        display:block;
+        margin-left: -10px;
+        margin-bottom: 0px;
+}
+table#headerTable td#addressCell td#contactBox {
+        padding: 10px;
+        padding-bottom: 10px;
+}
+div#researchBox h1 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+div.listbox h2 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+div.listbox ul {
+  margin:0px;
+}
+div.listbox ul li {
+  padding-top: 2px;
+  padding-bottom: 5px;	
+}
+
+    </style>
+
+  </head>
+  <body>
+
+    <div id="content">
+      <table id="headerTable" cellpadding="0" cellspacing="0">
+        <tr>
+            <td id="avatarCell">
+                <img src="profile.jpg" width="200px"/>
+            </td>
+            <td id="nameCell">
+                <h1 class="nameCell">Georgios Giannikis</h1>
+                <h3>Dipl. Ing., Msc., PhD&nbsp;Student</h3>
+            </td>
+            <td id="addressCell">
+                <div id="addressBox">
+                    <h3>Address:</h3>
+                    Inst. for Pervasive Computing<br/>
+                    ETH (CAB F 74.1)<br/>
+                    Universitätstrasse 6<br/>
+                    CH-8092 Zürich<br/>
+                    Switzerland
+                </div>
+            <hr class="dotted"/>
+                <div id="contactBox">
+                    Phone: +41 44 632 2528<br/>
+                    Office: CAB F 74.1 <br/>
+                    Homepage: <a href="http://www.systems.ethz.ch/people/giannikisg">http://www.giannikis.com</a><br/>
+                    e-Mail: <a href="mailto:fakeaddress@fake.ch" style="display:none">fakeaddress@fake.ch</a><a id="emailLink" href="&#0109;ailto&#0058;giannikg&#0064;inf.ethz.ch">giannikg&#0064;inf.ethz.ch</a><br/>
+                </div>
+            </td>
+        </tr>
+      </table>
+      <hr class="dotted"/>
+      <div id="researchBox">
+        <h1>Research</h1>
+        I joined the Systems Group of the department of Computer Science at ETH Zurich in May 2009, as a PhD student. 
+        My interests lie in the area of medium and large scale distributed systems and data management systems.
+        I am particularly interested in self-managed medium scale distributed database systems.
+        <br/>
+        <br/>
+        Prior to becoming a PhD student, I received my Msc on Computer Science from ETH Zurich in 2009. 
+        My master thesis was part of the implementation of a distributed main-memory data management system.
+        In 2006 I received my Diploma on Electrical and Computer Engineering from University of Patras, Greece.
+        <br/>
+      </div>
+      <hr class="dotted" />
+      <div id="publicationsBox" class="listBox">
+        <h2>Publications</h2>
+
+        <ul class="publications">
+
+          <li>
+            Shared Workload Optimization [To appear in 2014]
+          <br/>
+            Georgios Giannikis, Darko Makreshanski, Gustavo Alonso, Donald Kossmann. <br/>
+          </li>
+
+          <li>
+            <a href="http://dl.acm.org/citation.cfm?id=2463676.2463678&coll=DL&dl=GUIDE&CFID=119861160&CFTOKEN=46684660">Workload optimization using SharedDB [Demo Paper]</a>
+          <br/>
+            Georgios Giannikis, Darko Makreshanski, Gustavo Alonso, Donald Kossmann. <br/>
+            <i>2013 ACM SIGMOD Conference</i><br/>
+            New York, USA, 2013.
+          </li>
+
+        <!--
+          <li>
+            <a href="">Why Execute One Query, when you can Execute Thousands [Demo / Poster Paper]</a>
+          <br/>
+            Georgios Giannikis, Darko Makreshanski, Gustavo Alonso, Donald Kossmann. <br/>
+            <i>2013 ACM SIGOPS/EuroSys Conference</i><br/>
+            Prague, Czech Republic, 2013.
+          </li>
+        -->
+
+          <li>
+            <a href="http://vldb.org/pvldb/vol5/p526_georgiosgiannikis_vldb2012.pdf">SharedDB: Killing One Thousand Queries With One Stone.</a> 
+    <!-- [<a href="SharedDB.pdf">Slides</a>]--> <br/>
+            Georgios Giannikis, Gustavo Alonso, Donald Kossmann. <br/>
+            PVLDB 5(6):526-537, 2012.
+          </li>
+
+          <li>
+            <a href="http://systems.ethz.pubzone.org/pages/publications/showPublication.do?publicationId=1396317">Crescando [Demo Paper]</a><br/>
+            Georgios Giannikis, Philipp Unterbrunner, Jeremy Meyer, Gustavo Alonso, Dietmar Fauser, Donald Kossman.<br/>
+            <i>2010 ACM SIGMOD/PODS Conference</i><br/>
+            Indianapolis, USA, 2010.
+          </li>
+
+          <li>
+            <a href="http://e-collection.ethbib.ethz.ch/view/eth:41832">Daedalus, a distributed crescando system</a></br>
+            Georgios Giannikis<br>
+            <a href="http://www.systems.ethz.ch">Systems Group</a><br/>
+            ETH Zürich, Switzerland, Apr 2009
+          </li>
+
+          <li>
+            <a href="http://www.vldb.org/pvldb/2/vldb09-323.pdf">Predictable Performance for Unpredictable Workloads</a>&nbsp;[<a href="http://vldb2009.org/files/Slides/3395-crescando.pdf">Slides</a>]<br/>
+            Philipp Unterbrunner, Georgios Giannikis, Gustavo Alonso, Dietmar Fauser, Donald Kossmann.<br/>
+            <i>35th International Conference on Very Large Data Bases (VLDB 2009)</I><br/>
+            Lyon, France, Aug 2009
+          </li>
+
+        </ul>
+      </div>
+      <hr class="dotted"/>
+      <div id="patentsBox" class="listBox">
+        <h2>Patents</h2>
+
+        <ul class="patents">
+          <li>
+            United Stated Patent and Trademark Office, <a href="https://www.google.com/patents/US20120197868">US/2012/0197868/A1</a><br/>
+            Continuous Full Scan Data Store Table And Distributed Data Store Featuring Predictable Answer Time For Unpredictable Workload.
+          </li>
+          <li>
+            World Intellectual Property Organization, <a href="http://www.wipo.int/patentscope/search/en/WO2011023651">WO/2011/023651</a><br/>
+            Segmented main-memory stored relational database table system with improved collaborative scan algorithm. <br/>
+            Inventors: Donald Kossmann, Gustavo Alonso, Georgios Giannikis, Philipp Unterbrunner, Dietmar Fauser, Jeremy Meyer and Cedric Florimond.
+          </li>
+        </ul>
+
+      </div>
+      <hr class="dotted"/>
+      <div id="teachingBox" class="listBox">
+        <h2>Teaching</h2>
+
+        <ul class="teaching">
+          <li>
+            <a href="http://ait.inf.ethz.ch/teaching/courses/2014-SS-Parallel-Programming">Parallel Programming, Spring 2014</a>
+          </li>
+          <li>
+            <a href="http://www.systems.ethz.ch/courses/fall2013/asl">Advanced Systems Lab, Autumn 2013/14</a>
+          </li>
+          <li>
+            <a href="http://www.systems.ethz.ch/courses/spring2013/data_mod_db">Data Modelling and Databases, Spring 2013</a>
+          </li>
+          <li>
+            <a href="http://www.systems.ethz.ch/courses/fall2012/ASL">Advanced Systems Lab, Autumn 2012/13</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="dotted"/>
+    </div>
+
+  <script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-87719594-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  </body>
+</html>
+
